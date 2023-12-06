@@ -1,0 +1,5 @@
+to build my docker images 
+docker build -t app-gui .
+
+to run my docker images 
+docker run -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix app-gui
